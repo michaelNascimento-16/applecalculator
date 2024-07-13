@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+   
+   <input id="visor" type="text"  placeholder="0" >
+   
+  <div class="buttonContainer">
+   <div class="buttons">
+    <button type="reset" value="C" onclick="clInput" class="top_buttons">AC</button>
+    <button type="button" value="-/+" onclick="" class="top_buttons">+/-</button>
+    <button type="button" value="('%')" onclick="operador('%')" class="top_buttons">%</button>
+    <button type="button" value="1" onclick="numero('7')">7</button>
+    <button type="button" value="2" onclick="numero('8')">8</button>
+    <button type="button" value="3" onclick="numero('9')">9</button>
+    <button type="button" value="4" onclick="numero('4')">4</button> 
+    <button type="button" value="5" onclick="numero('5')">5</button> 
+    <button type="button" value="6" onclick="numero('6')">6</button>
+    <button type="button" value="7" onclick="numero('1')">1</button> 
+    <button type="button" value="8" onclick="numero('2')">2</button> 
+    <button type="button" value="9" onclick="numero('3')">3</button> 
+    <button type="button" value="0" onclick="numero('0')" id="button0">0</button> 
+    <button type="button" value="," onclick="decimal(',')" id="virgButton">,</button>
+    
+   </div>
+   <div class="somadores">
+    <button type="button" value="('÷')" class="botoesSomadores" onclick="operador('/')">÷</button>
+    <button type="button" value="('×')" class="botoesSomadores" onclick="operador('*')">×</button>
+    <button type="button" value="('+')" class="botoesSomadores" onclick="operador('+')">+</button>
+    <button type="button" value="('-')" class="botoesSomadores" onclick="operador('-')">-</button>
+    <button type="button" value="="class="botoesSomadores"onclick="calcular()">=</button>
+   </div>
+  </div>
+  <div class="Apple">
+     <button id="borderApple"></button>
+  </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
